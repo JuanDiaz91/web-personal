@@ -1,0 +1,23 @@
+{%extends 'core/base.html'%}
+{% block title %}Acerca de{% endblock  %}
+
+{% block background %}{% load static %}{% static 'core/img/about-bg.jpg' %}{% endblock %}
+
+{% block headers %}
+<h1>Acerca de</h1>
+<span class="subheading">Biografía</span>
+{% endblock %}
+
+{% block content %}
+<div class="row"> 
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src="{% static 'core/img/juan.jpeg' %}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Juan Daniel Díaz Mateos</h2>   
+        <p>Tengo previa experiencia en el sector de la hostelería y turismo.
+            A lo largo de mi formación académica y profesional he potenciado mi espíritu de trabajo en equipo, iniciativa, implicación en las tareas y mi sentido de resolución.
+            Busco dar un giro a mi vida profesional para dedicarme a lo que verdaderamente me apasiona y me genera ansia de conocimiento, el desarrollo web. </p>
+    </div>
+</div>
+{% endblock  %}
